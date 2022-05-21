@@ -3,9 +3,13 @@
 
 :root {
     --primary: #fe2c55;
+    --Default-Layout-Header-Height:60px;
+    --Default-Layout-Width:1150px;
 }
 * {
     box-sizing: border-box;
+    margin:0px;
+    padding:0px;
 }
 html {
   font-size: 62.5%;
