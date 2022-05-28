@@ -13,6 +13,7 @@
 .inner {
   height: 100%;
   width: var(--Default-Layout-Width);
+  padding: 0 var(--Default-Layout-Horizontal-spacer);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -87,7 +88,7 @@
     background-color: rgba(22, 24, 35, 0.06);
   }
 }
-
+// actions
 .actions {
   display: flex;
   align-items: center;
@@ -97,4 +98,21 @@
   margin-left: 28px;
   background: transparent;
   padding: 4px 8px;
+  cursor: pointer;
+}
+
+.action-btn {
+  color: #161823;
+  font-size: 2.2rem;
+  background-color: transparent;
+  padding: 4px 12px;
+  cursor: pointer;
+}
+.user-avatar {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: 12px;
+  cursor: pointer;
 }

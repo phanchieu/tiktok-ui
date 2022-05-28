@@ -1,13 +1,14 @@
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .container {
-    width: var(--Default-Layout-Width);
-    display: flex;
+  width: var(--Default-Layout-Width);
+  padding: 0 var(--Default-Layout-Horizontal-spacer);
+  display: flex;
 }
 .content {
-    flex: 1;
-    min-height: 1000px;
+  flex: 1;
+  min-height: 1000px;
 }
