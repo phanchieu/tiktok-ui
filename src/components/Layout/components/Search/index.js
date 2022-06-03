@@ -31,7 +31,7 @@ const Search = () => {
       setLoading(true);
 
       const result = await searchServices.search(debounced);
-      
+
       setSearchResult(result);
       setLoading(false);
     };
@@ -45,6 +45,13 @@ const Search = () => {
 
   const handleHideResult = () => {
     setShowResult(false);
+  };
+
+  const handleChange = (e) => {
+    const searchValue = e.target.value;
+    if (!searchValue.startsWith(' ') && searchValue.trim()) {
+      setSearchValue(searchValue);
+    }
   };
 
   return (
@@ -70,7 +77,7 @@ const Search = () => {
           type="text"
           placeholder="Search accounts and videos"
           spellCheck={false}
-          onChange={(e) => setSearchValue(e.target.value)}
+          onChange={handleChange}
           onFocus={() => setShowResult(true)}
         />
         {!!searchValue && !loading && (
@@ -79,7 +86,7 @@ const Search = () => {
           </button>
         )}
         {loading && <FontAwesomeIcon className={cx('loading')} icon={faSpinner} />}
-        <button className={cx('search-btn')}>
+        <button className={cx('search-btn')} onMouseDown={(e) => e.preventDefault()}>
           <SearchIcon />
         </button>
       </div>
