@@ -6,6 +6,7 @@
 .container {
   width: var(--Default-Layout-Width);
   padding: 0 var(--Default-Layout-Horizontal-spacer);
+  margin-top: var(--Default-Layout-Header-Height);
   display: flex;
 }
 .content {
