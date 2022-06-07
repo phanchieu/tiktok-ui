@@ -30,15 +30,15 @@ const MENU_ITEMS = [
     icon: <FontAwesomeIcon icon={faEarthAsia} />,
     title: 'English',
     children: {
-      title: 'Languege',
+      title: 'Language',
       data: [
         {
-          type: 'Languege',
+          type: 'Language',
           code: 'en',
           title: 'English',
         },
         {
-          type: 'Languege',
+          type: 'Language',
           code: 'vi',
           title: 'Tiếng Việt',
         },
